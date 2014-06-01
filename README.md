@@ -1,5 +1,7 @@
 derby-bundle-bootstrap
 ======================
+
+```javascript
 options = {
     styles: 'less', // or 'css' - default
     modules: [
@@ -19,3 +21,4 @@ options = {
 }
 
 app.use(require('derby-bundle-bootstrap'), options);
+```
