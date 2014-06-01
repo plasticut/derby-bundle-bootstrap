@@ -1,4 +1,4 @@
-module.exports = function(options) {
+module.exports = function(app, options) {
     var derby = require('derby');
     var scripts;
     if (options && options.modules) {
@@ -15,4 +15,5 @@ module.exports = function(options) {
             });
         });
     });
+    if (app.loadStatic) { app.loadStatic(__dirname + '/bower_components/bootstrap/dist/'); }
 };

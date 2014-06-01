@@ -6,5 +6,5 @@ module.exports = function(app, options) {
     }
     var derby = require('derby');
     var bundle = derby.util.serverRequire(module, './bundle-bootstrap');
-    if (bundle) { bundle(options); }
+    if (bundle) { bundle(app, options); }
 };
