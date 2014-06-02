@@ -20,7 +20,7 @@ var options = {
     ]
 };
 app.serverUse(module, require('derby-static'));
-app.use(require('derby-bundle-font-awesome'), options);
+app.use(require('derby-bundle-bootstrap'), options);
 ```
 Server:
 ```javascript
