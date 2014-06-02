@@ -15,5 +15,5 @@ module.exports = function(app, options) {
             });
         });
     });
-    if (app.loadStatic) { app.loadStatic(__dirname + '/bower_components/bootstrap/dist/'); }
+    if (app.loadStatic) { app.loadStatic({ route: '/fonts', dir: __dirname + '/bower_components/bootstrap/dist/fonts' }); }
 };
